@@ -1,10 +1,12 @@
 # Panda-Lite — Full API Documentation
 
+## UPDATE 1: Add `GET /_internal/db-state` endpoint.
+
 ## This project has some intentional(!) issues or incomplete features.
 
 ## What It Is
 
-Panda-Lite is a lightweight food-delivery REST API built with Node.js and Express, designed as a backend-system for the **UIU's CSE 4495 - Software Testing and Quality Assurance Course** to be tested by the students. It models the core workflow of a delivery platform: customers order from restaurants, restaurants prepare orders, and riders deliver them. Orders move through a defined lifecycle:
+Panda-Lite is a lightweight food-delivery REST API built with Node.js and Express, designed as a backend for the STQA Gateway (see the gateway's own README for provisioning and routing). It models the core workflow of a delivery platform: customers order from restaurants, restaurants prepare orders, and riders deliver them. Orders move through a defined lifecycle:
 
 ```
 placed → accepted → preparing → ready_for_pickup → picked_up → delivered
@@ -32,7 +34,7 @@ All data is stored in **Postgres**, in a team-specific database selected via the
 
 ---
 
-## How to Run (Not for you)
+## How to Run
 
 This service is not meant to be run standalone against the public internet — it is designed to sit behind the STQA Gateway, which handles student identity, team isolation, and routing. See the gateway README for how to start the full stack (`docker compose up`) and how requests reach this service.
 
@@ -78,17 +80,31 @@ POST /_internal/reset-database
 ```
 
 ---
-### 5. Assignment-Specific Notes
 
-#### BaseURL
-- For security reasons, the URL is shared exclusively in the course WhatsApp group and on ELMS. Please retrieve it from there.
+### 5. Inspect database state
+
+Returns a full snapshot of the team database selected by the `X-STQA-Context` header — every user, restaurant, menu item, order (with its `items` and `timeline`), and rating. Intended for test verification/debugging, not part of the app-facing API (no `Authorization` bearer token required).
+
+```
+GET /_internal/db-state
+```
+```json
+{
+  "users": [ /* User objects, see Data Models */ ],
+  "restaurants": [ /* Restaurant objects */ ],
+  "menuItems": [ /* MenuItem objects */ ],
+  "orders": [ /* Order objects, each including nested items and timeline */ ],
+  "ratings": [ /* Rating objects */ ]
+}
+```
+
+---
+### 6. Assignment-Specific Notes
 
 #### X-STQA-Key
 - You should have received a secret key via email.
 - Include this key in the header of all your requests (`X-STQA-Key`).
 - Keep this key private; do not share it or send requests using another student's key.
-
-**Note:** The `BaseURL` and `X-STQA-Key` may change due to technical reasons. Please monitor your email and the WhatsApp group for the latest updates.
 
 #### `_lab` Field
 - Each response will include a `_lab` field containing a unique request ID. Please include these IDs in your report for reference.
