@@ -1,7 +1,7 @@
 # Assignment Announcement — System Testing (Panda-Lite API)
 
 ## Deadline
-* **TBA (will be discussed in class)**
+* **First Class after Mid Term Examination**
 
 ## Presentation
 * **Section B, C: TBA**
