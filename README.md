@@ -2,6 +2,8 @@
 
 ## Deadline
 * **First Class after Mid Term Examination**
+* **Report Submission: 7th Week (1st class)**
+* **Presentation: 7th Week (2nd class)**
 
 ## Presentation
 * **Section B, C: TBA**
