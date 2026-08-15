@@ -50,7 +50,7 @@ Submit one **Markdown report** and a Postman collection export. Your report must
     * For each endpoint or behavior, document your input choices and what you expect back (output + HTTP status code). Use the class slides as a guide.
 
 2. **Test Cases**
-    * Use a table or list format with: **ID, Short Title, Pre-conditions, Steps, Expected, Actual, Status, Evidence link, Pass/Fail**.
+    * Use a table or list format with: **ID, Short Title, Pre-conditions, Steps, Expected Status Code, Actual Status Code, Status**.
     * The **ID** for each test case "can" be the **last 6 digits** of the `requestId` from that request/response's `_lab` field.
     * Cover the full range: happy paths, bad inputs, auth failures, permission checks, ownership rules, order lifecycle transitions, cancellation and rating restrictions, filter behavior, and edge cases.
 
