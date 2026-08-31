@@ -1,0 +1,145 @@
+{
+	"id": "c6-panda-lite-env-0112",
+	"name": "Panda-Lite Env (0112310043_0112231070_011221241)",
+	"values": [
+		{
+			"key": "baseUrl",
+			"value": "https://stqa.mobaswir.live/api/panda-262",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "x_stqa_key",
+			"value": "BWYGJJNYdubcM1lt_d3CWRs2aM5UMw3gW9n6mSkacno",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "alice_token",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "bob_token",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "charlie_token",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "dave_token",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "eve_token",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "frank_token",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "alice_id",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "bob_id",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "charlie_id",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "dave_id",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "eve_id",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "frank_id",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "bob_rest_id",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "charlie_rest_id",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "menu_item_biryani",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "menu_item_borhani",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "menu_item_pizza",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "menu_item_zero",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "order1_id",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "order2_id",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "order3_id",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment"
+}
