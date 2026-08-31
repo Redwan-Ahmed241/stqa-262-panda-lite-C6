@@ -1,14 +1,14 @@
 {
   "info": {
     "_postman_id": "9a1b2c3d-4e5f-6a7b-8c9d-0e1f2a3b4c5d",
-    "name": "011221241_SystemTesting",
-    "description": "Comprehensive Automated System Testing Suite for Panda-Lite API (Student ID: 011221241, Team: C6). Designed to execute sequentially against an empty database with pre-request scripts, dual environment/collection variable extraction, array format compatibility, and automated defect assertions.",
+    "name": "0112310043_0112231070_011221241_SystemTesting",
+    "description": "Postman collection for system testing the Panda-Lite API. Contains test requests for auth, restaurants, menu items, orders, and ratings with test scripts to check responses.",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "variable": [
     {
       "key": "baseUrl",
-      "value": "https://initiatives-induced-constraint-all.trycloudflare.com/api/panda-262",
+      "value": "https://stqa.mobaswir.live/api/panda-262",
       "type": "string"
     },
     {
